@@ -562,7 +562,7 @@ const HeroSection = () => {
     <section style={{ 
         height: '100vh', width: '100%', position: 'relative', display: 'flex', alignItems: 'center',
         paddingLeft: isCompact ? '5%' : '8%', pointerEvents: 'none',
-        paddingRight: isCompact ? '5%' : '0'
+        paddingRight: isCompact ? '0' : '0'
     }}>
         <div style={{ zIndex: 5, maxWidth: '650px', pointerEvents: 'auto', textAlign: isCompact ? 'center' : 'left', width: isCompact ? '100%' : 'auto' }}>
             <h1 style={{ 
