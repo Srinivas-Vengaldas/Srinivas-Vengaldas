@@ -656,6 +656,8 @@ const BioSection = () => {
 
 const TimelineItem = ({ year, title, subtitle, align, link }) => {
     const { isCompact } = useWindowSize();
+    
+    // FIX: On mobile (isCompact), we set effectiveAlign to 'right' to keep cards on the left side
     const effectiveAlign = isCompact ? 'right' : align; 
     
     return (
@@ -664,20 +666,19 @@ const TimelineItem = ({ year, title, subtitle, align, link }) => {
         viewport={{ once: false, margin: "-100px" }} transition={{ duration: 0.8 }}
         style={{
             display: 'flex', 
-            // logic: if 'left', align flex-end (desktop left side). 
-            // if 'right', align flex-start (desktop right side OR mobile standard).
             justifyContent: effectiveAlign === 'left' ? 'flex-end' : 'flex-start',
             alignItems: 'center', marginBottom: '100px', position: 'relative', 
             width: isCompact ? '100%' : '50%', 
+            maxWidth: '100%',
+            boxSizing: 'border-box', 
             pointerEvents: 'auto',
-            // Maintain padding to not overlap the line
             paddingLeft: isCompact ? '30px' : 0 
         }}
         className={isCompact ? '' : (effectiveAlign === 'left' ? 'mr-auto pr-10' : 'ml-auto pl-10')}
     >
         <div style={{
             background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)',
-            backdropFilter: 'blur(10px)', padding: '30px', borderRadius: '20px', 
+            backdropFilter: 'blur(10px)', padding: '30px', borderRadius: '20px',             
             width: isCompact ? '100%' : '350px',
             position: 'relative', transition: 'border 0.3s'
         }}
@@ -709,7 +710,6 @@ const TimelineItem = ({ year, title, subtitle, align, link }) => {
         {/* Dot positioning logic */}
         <div style={{
             position: 'absolute', 
-            // On mobile, force dot to left: 0px. On desktop, follow alignment.
             [effectiveAlign === 'left' && !isCompact ? 'right' : 'left']: isCompact ? '0px' : '-6px', 
             width: '12px', height: '12px',
             background: '#FFD700', borderRadius: '50%', boxShadow: '0 0 10px #FFD700',
