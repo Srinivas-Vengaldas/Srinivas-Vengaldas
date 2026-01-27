@@ -2,49 +2,51 @@
 
 # Hi, I'm Srinivas Vengaldas 👋
 
-**Student at George Washington University | Software Developer | Web Technologies**
-_Building scalable web applications and analyzing digital strategies._
+**Masters Student at GWU | Full Stack Developer | AI Enthusiast**
+_Building intelligent systems, mobile solutions, and digital strategies._
 
 ### 🛠️ Professional Focus
-* **Web Development:** Passionate about building responsive applications using **React** and **Tailwind CSS**, including my personal portfolio website.
-* **System Architecture:** Experienced in creating structural models (CRC cards, class diagrams) and behavioral state machines for complex system analysis.
-* **Digital Strategy:** Skilled in developing digital presence and marketing strategies, including comprehensive reports for major brands like **ESPN**.
+* **AI & Deep Learning:** Developing diagnostic tools like **Autix** using Transfer Learning (VGG-19, Xception) and Flask for healthcare applications.
+* **Full Stack & Mobile:** specialized in **React**, and **Firebase** to build scalable academic and utility applications.
+* **Digital Strategy:** Analyzing market funnels and creating comprehensive digital transformation reports for major brands like **ESPN**.
 
 ---
 
 ### 🚀 Key Projects & Impact
-* **Project Deployment:** Successfully built and deployed repositories like **GWU-Student-Connect** and **DC-Book-Store** via Vercel to showcase professional work.
-* **Academic Engineering:** Completed advanced coursework (ISTM-6205) involving Python debugging (FPDF) and technical documentation.
-* **Strategic Analysis:** Conducted in-depth analysis on digital marketing strategies and presentation design for enterprise case studies.
+* **Autix (AI for Healthcare):** Engineered an ASD early diagnosis tool using Deep Learning (VGG-19, Xception) achieving **86% accuracy**. Deployed via Flask to democratize access to screening.
+* **Smart-DMV:** Led the digital transformation of the **DC DMV** document verification process, designing an AI-enhanced portal and normalized SQL database that aims to reduce wait times by **47 minutes**.
+* **Mahindra University App:** Built a comprehensive mobile solution using **Flutter & Firebase** for attendance and grade management, featuring real-time location tracking via **Google Maps API**.
+* **GW-Student-Connect:** Developed a centralized platform for George Washington University students to connect, collaborate, and share academic resources.
+* **ESPN Digital Analysis:** Conducted a strategic audit of ESPN’s marketing funnel, proposing a data-driven digital strategy to optimize user engagement and conversion.
 
 ---
 
 ### 📂 Current Interests
-* ☁️ **Internships:** Actively pursuing Software Engineering Intern positions for Summer 2026 (e.g., Airbnb).
-* 🛡️ **Ethical Hacking:** Researching the ethics of social engineering vs. technical hacking, with a focus on historical cases like Kevin Mitnick.
-* 🍳 **Culinary Arts:** Experimenting with complex recipes in my free time, such as Gordon Ramsay's crispy pork belly.
+* ☁️ **Cloud Native:** Exploring AWS and Vercel for deploying scalable AI models.
+* 🛡️ **Data Privacy:** Researching secure data handling in public sector applications (like DMV systems).
+* 🍳 **Culinary Arts:** Experimenting with complex recipes in my free time.
 
 ---
 
 ### 📫 Connect with Me
-* 💼 **LinkedIn:** [linkedin.com/in/srinivas-vengaldas]([https://www.linkedin.com/](https://www.linkedin.com/in/vengaldassrinivas/)) 
+* 💼 **LinkedIn:** [linkedin.com/in/srinivas-vengaldas](https://www.linkedin.com/in/srinivas-vengaldas/)
 * 📧 **Email:** vengaldas02@gmail.com
 
 <p align="left">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2000&pause=1&width=435&lines=GWU+Student;Fullstack+Developer;React+Developer;AI+Enthusiast;Cloud+and+Microservices+Architect;System+Analyst;Aspiring+Software+Engineer" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2000&pause=1&width=435&lines=AI+Enthusiast;Fullstack+Developer;Cloud+and+Microservices+Architect;React+Developer;System+Analyst;Digital+Strategist;" alt="Typing SVG" /></a>
 </p>
 
 ## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vengaldassrinivas/) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:vengaldas02@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/srinivas-vengaldas/) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:vengaldas02@gmail.com)
 
 # 💻 Tech Stack:
 
 ```javascript
 const srinivas = {
-  code: ["Python", "JavaScript", "React", "HTML/CSS", "SQL"],
-  frameworks: ["Tailwind CSS", "Next.js", "FPDF"],
-  tools: ["Git", "Vercel", "UML Modeling", "CRC Cards"],
-  projects: ["GWU-Student-Connect", "DC-Book-Store", "Portfolio"],
-  academics: ["George Washington University", "ISTM-6205"],
-  interests: ["Web Dev", "Cooking", "Social Engineering Ethics"]
+  languages: ["Python", "Dart", "JavaScript", "SQL", "HTML/CSS"],
+  ai_ml: ["TensorFlow", "Keras", "VGG-19", "Xception", "Flask"],
+  mobile_web: ["Flutter", "React", "Firebase", "Tailwind CSS"],
+  tools: ["Git", "Google Maps API", "Vercel", "Figma"],
+  projects: ["Autix", "Smart-DMV", "Mahindra Uni App", "GW-Connect"],
+  education: "Masters in IST, George Washington University"
 }
