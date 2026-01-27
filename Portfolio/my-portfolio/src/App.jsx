@@ -363,6 +363,8 @@ const Navbar = ({ activeSection, scrollToTop }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isCompact, isMobile } = useWindowSize(); 
 
+  const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=vengaldas02@gmail.com";
+
   return (
     <>
       <nav style={{ 
@@ -404,7 +406,6 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                       }}>{link.label}</a>
                   ))}
 
-                  {/* --- RESUME LINK (DESKTOP) --- */}
                   <a 
                     href="/resume.pdf" 
                     target="_blank" 
@@ -425,7 +426,11 @@ const Navbar = ({ activeSection, scrollToTop }) => {
               </div>
 
               <div style={{ pointerEvents: 'auto' }}>
-                  <a href="mailto:vengaldas02@gmail.com" style={{ 
+                  <a 
+                    href={gmailLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{ 
                       background: 'white', color: 'black', textDecoration: 'none', 
                       padding: '12px 24px', 
                       borderRadius: '50px', fontWeight: 'bold', cursor: 'pointer', 
@@ -478,7 +483,6 @@ const Navbar = ({ activeSection, scrollToTop }) => {
               pointerEvents: 'auto'
             }}
           >
-            {/* Close Button */}
             <button
               onClick={() => setIsMenuOpen(false)}
               style={{
@@ -490,7 +494,6 @@ const Navbar = ({ activeSection, scrollToTop }) => {
               <IconClose />
             </button>
 
-            {/* Menu Links */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '40px', alignItems: 'center' }}>
                 {[
                   { label: 'About', id: 'about' },
@@ -513,7 +516,6 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                   </motion.a>
                 ))}
 
-                {/* --- RESUME LINK (MOBILE) --- */}
                 <motion.a 
                     href="/resume.pdf"
                     target="_blank"
@@ -530,9 +532,10 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                     Resume
                 </motion.a>
 
-                {/* Get in Touch Button inside Menu */}
                 <motion.a 
-                  href="mailto:vengaldas02@gmail.com" 
+                  href={gmailLink} 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsMenuOpen(false)}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
