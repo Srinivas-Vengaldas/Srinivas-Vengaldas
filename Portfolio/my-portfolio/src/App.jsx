@@ -656,8 +656,7 @@ const BioSection = () => {
 
 const TimelineItem = ({ year, title, subtitle, align, link }) => {
     const { isCompact } = useWindowSize();
-    
-    const effectiveAlign = isCompact ? 'left' : align; 
+    const effectiveAlign = isCompact ? 'right' : align; 
     
     return (
     <motion.div 
@@ -665,10 +664,13 @@ const TimelineItem = ({ year, title, subtitle, align, link }) => {
         viewport={{ once: false, margin: "-100px" }} transition={{ duration: 0.8 }}
         style={{
             display: 'flex', 
+            // logic: if 'left', align flex-end (desktop left side). 
+            // if 'right', align flex-start (desktop right side OR mobile standard).
             justifyContent: effectiveAlign === 'left' ? 'flex-end' : 'flex-start',
             alignItems: 'center', marginBottom: '100px', position: 'relative', 
             width: isCompact ? '100%' : '50%', 
             pointerEvents: 'auto',
+            // Maintain padding to not overlap the line
             paddingLeft: isCompact ? '30px' : 0 
         }}
         className={isCompact ? '' : (effectiveAlign === 'left' ? 'mr-auto pr-10' : 'ml-auto pl-10')}
@@ -704,8 +706,10 @@ const TimelineItem = ({ year, title, subtitle, align, link }) => {
             )}
         </div>
         
+        {/* Dot positioning logic */}
         <div style={{
             position: 'absolute', 
+            // On mobile, force dot to left: 0px. On desktop, follow alignment.
             [effectiveAlign === 'left' && !isCompact ? 'right' : 'left']: isCompact ? '0px' : '-6px', 
             width: '12px', height: '12px',
             background: '#FFD700', borderRadius: '50%', boxShadow: '0 0 10px #FFD700',
@@ -714,7 +718,6 @@ const TimelineItem = ({ year, title, subtitle, align, link }) => {
         }}></div>
     </motion.div>
 )};
-
 const TimelineSection = () => {
     const { isCompact } = useWindowSize();
 
