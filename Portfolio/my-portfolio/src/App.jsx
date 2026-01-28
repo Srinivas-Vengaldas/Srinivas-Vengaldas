@@ -976,7 +976,7 @@ const projectsData = [
     category: "AI & Healthcare",
     image: "/child-playing-with-colorful-blocks.png", 
     description: "Deep learning application designed to assist in the early detection of Autism Spectrum Disorder (ASD) through facial image analysis. Leveraging Transfer Learning (VGG-19 & Xception), the model achieved 86% accuracy. Features a Flask web interface for instant predictions and HIPPA-compliant data handling.",
-    repo: "https://github.com/Srinivas-Vengaldas/AUTIX"
+    repo: "https://github.com/Srinivas-Vengaldas/Autix"
   },
   {
     id: 2,
@@ -984,7 +984,7 @@ const projectsData = [
     category: "Web Development & Agile",
     image: "/GW.png",
     description: "Centralized academic collaboration platform solving fragmented communication at GWU. Led end-to-end development using Agile Scrum over 5 sprints. Delivered features like real-time chat and a study marketplace, achieving a projected 65.73% ROI and a 30% reduction in development cycle times.",
-    repo: "https://github.com/Srinivas-Vengaldas/GW-Connect" 
+    repo: "https://github.com/Srinivas-Vengaldas/GWU-Student-Connect" 
   },
   {
     id: 3,
@@ -1004,11 +1004,11 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Mahindra Uni App",
+    title: "Mahindra University App",
     category: "Mobile Dev (Flutter)",
     image: "/MU.png",
     description: "Unified mobile platform bridging communication gaps for the Mahindra University ecosystem. Built with Flutter and Firebase, it features real-time attendance tracking, assignment management, and a parent dashboard with Google Maps integration for student safety monitoring.",
-    repo: "https://github.com/Srinivas-Vengaldas/Mahindra-Uni-App" 
+    repo: "https://github.com/Srinivas-Vengaldas/Mahindra-University-App" 
   }
 ];
 
