@@ -364,6 +364,7 @@ const Navbar = ({ activeSection, scrollToTop }) => {
   const { isCompact, isMobile } = useWindowSize(); 
 
   const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=vengaldas02@gmail.com";
+  const resumelink = "Portfolio/my-portfolio/public/Srinivas_Resume.pdf"
 
   return (
     <>
@@ -407,7 +408,7 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                   ))}
 
                   <a 
-                    href="/Srinivas_Resume.pdf" 
+                    href={resumelink} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={{ 
