@@ -363,8 +363,8 @@ const Navbar = ({ activeSection, scrollToTop }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isCompact, isMobile } = useWindowSize(); 
 
-  const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=vengaldas02@gmail.com";
-  const resumelink = "Portfolio/my-portfolio/public/Srinivas_Resume.pdf"
+  const resumeLink = "https://raw.githubusercontent.com/Srinivas-Vengaldas/Portfolio/main/my-portfolio/public/Srinivas_Resume.pdf";
+  const resumelink = "https://raw.githubusercontent.com/Srinivas-Vengaldas/Portfolio/my-portfolio/public/Srinivas_Resume.pdf"
 
   return (
     <>
@@ -408,7 +408,7 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                   ))}
 
                   <a 
-                    href={resumelink} 
+                    href={resumeLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={{ 
@@ -518,7 +518,7 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                 ))}
 
                 <motion.a 
-                    href="/Srinivas_Resume.pdf"
+                    href={resumeLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMenuOpen(false)}
