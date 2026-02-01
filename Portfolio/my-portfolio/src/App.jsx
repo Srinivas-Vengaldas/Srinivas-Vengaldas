@@ -407,7 +407,7 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                   ))}
 
                   <a 
-                    href="/resume.pdf" 
+                    href="/Srinivas_Resume.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     style={{ 
@@ -517,7 +517,7 @@ const Navbar = ({ activeSection, scrollToTop }) => {
                 ))}
 
                 <motion.a 
-                    href="/resume.pdf"
+                    href="/Srinivas_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMenuOpen(false)}
