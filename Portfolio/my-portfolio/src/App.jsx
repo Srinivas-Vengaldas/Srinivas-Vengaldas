@@ -363,8 +363,8 @@ const Navbar = ({ activeSection, scrollToTop }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isCompact, isMobile } = useWindowSize(); 
 
-  const resumeLink = "https://raw.githubusercontent.com/Srinivas-Vengaldas/Portfolio/main/my-portfolio/public/Srinivas_Resume.pdf";
-  const resumelink = "https://raw.githubusercontent.com/Srinivas-Vengaldas/Portfolio/my-portfolio/public/Srinivas_Resume.pdf"
+  const resumeLink = "/Srinivas_Resume.pdf";
+  const gmailLink = "https://mail.google.com/mail/?view=cm&fs=1&to=vengaldas02@gmail.com";
 
   return (
     <>
