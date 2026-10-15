@@ -1,6 +1,6 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,55:3a2f00,100:FFD700&height=200&section=header&text=Srinivas%20Vengaldas&fontSize=52&fontColor=FFD700&fontAlignY=36&desc=Software%20Engineer%20%C2%B7%20Data%20%26%20ML%20Systems&descSize=18&descAlignY=56&descColor=e5e5e5&animation=fadeIn" alt="Srinivas Vengaldas" width="100%" />
+  <img src="assets/header.svg" alt="Srinivas Vengaldas, Software Engineer" width="100%" />
 </p>
 
 <p align="center">
@@ -140,5 +140,5 @@ approach:   Measure it. Every project below ships with its numbers and how they 
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFD700,45:3a2f00,100:050505&height=110&section=footer" alt="" width="100%" />
+  <img src="assets/footer.svg" alt="" width="100%" />
 </p>
