@@ -1,16 +1,33 @@
-# React + Vite
+# vengaldas.vercel.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of Srinivas Vengaldas: React, Three.js (React Three Fiber) and Framer Motion, built with Vite.
 
-Currently, two official plugins are available:
+## Run it
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # production build in dist/
+npm run lint
+```
 
-## React Compiler
+## Where things live
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Path | What it holds |
+|---|---|
+| `src/data/site.js` | Name, email, LinkedIn, resume link, nav sections |
+| `src/data/projects.js` | Every project card: summary, results, stack, live and code links |
+| `src/data/skills.js` | Skill groups; links between skills and projects are derived from project stacks |
+| `src/data/journey.js` | Timeline stops and their map coordinates |
+| `src/components/` | Page sections (Hero, About, Journey, Skills, Projects, Contact) |
+| `src/three/` | 3D scenes: hero cube, project cube navigator, skill constellation, journey globe |
+| `public/projects/` | Project images (WebP/SVG) |
 
-## Expanding the ESLint configuration
+To add a project, add an entry to `src/data/projects.js` and drop its image in `public/projects/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3D notes
+
+- Three.js loads in a separate chunk after the page text renders.
+- Each scene renders only while it is on screen, and pauses its animation for visitors who prefer reduced motion.
+- Reflections come from light panels in the scene, so nothing is fetched from a CDN at runtime.
+- If WebGL is unavailable, the scenes are skipped and the rest of the page still works.
